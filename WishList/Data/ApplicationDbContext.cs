@@ -7,10 +7,10 @@ using WishList.Models;
 
 namespace WishList.Data
 {
-    public class AppDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<Item> Items { get; set; }
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
